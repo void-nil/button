@@ -17,13 +17,15 @@ btn.addEventListener('click', () => {
     // Display image
     ic.style.display = 'block'
     // Switch colors
-    btn.style.background = colors[currentIndex];
-    currentIndex = (currentIndex + 1) % colors.length;
+    setTimeout(() => {
+      btn.style.background = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }, 1000);
     // Hide image again
     setTimeout(() => {
         ic.style.display = 'none';
         btn.disabled = false;
-    }, 3000);
+    }, 2000);
 });
 
 function updateText() {
@@ -37,6 +39,3 @@ function updateText() {
 
 window.addEventListener("load", updateText);
 window.addEventListener("resize", updateText);
-
-
-  
