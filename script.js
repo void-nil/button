@@ -1,7 +1,7 @@
 const btn = document.getElementById('btn');
 const ic = document.getElementById('image-container');
 const sound = new Audio('assets/sound.mp3')
-const colors = [
+const gradients = [
   "linear-gradient(to right, rgb(13, 106, 255), rgb(134, 12, 255))",
   "linear-gradient(to right, rgb(255, 36, 54), rgb(255, 127, 36))",
 ];
@@ -18,7 +18,7 @@ btn.addEventListener('click', () => {
     ic.style.display = 'block'
     // Switch colors
     setTimeout(() => {
-      btn.style.background = colors[currentIndex];
+      btn.style.background = gradients[currentIndex];
       currentIndex = (currentIndex + 1) % colors.length;
     }, 1000);
     // Hide image again
