@@ -8,7 +8,7 @@ const gradients = [
 
 let currentIndex = 0;
 sound.preload = 'auto';
-sound.volume = 0.5;
+sound.volume = 0.55;
 
 btn.addEventListener('click', () => {
     btn.disabled = true;
