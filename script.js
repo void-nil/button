@@ -19,7 +19,7 @@ btn.addEventListener('click', () => {
     // Switch colors
     setTimeout(() => {
       btn.style.background = gradients[currentIndex];
-      currentIndex = (currentIndex + 1) % colors.length;
+      currentIndex = (currentIndex + 1) % gradients.length;
     }, 1000);
     // Hide image again
     setTimeout(() => {
